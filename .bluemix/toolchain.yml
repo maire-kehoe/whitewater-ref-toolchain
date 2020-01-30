@@ -1,0 +1,30 @@
+version: '2'
+messages:
+  $i18n: locales.yml
+template:
+  name: "Whitewater ref toolchain"
+  description: "Used to show the Whitewater GitHub oauth Authorize button. References the existent Whitewater server, but a non-existent repo on that server."
+  # header: '![](toolchain.svg?localize)'
+  # icon: icon.svg
+  required:
+    - sample-repo
+  info:
+    git url: >
+        '[' + $env.repository + '](' + $env.repository + ')'
+    git branch: >
+        $env.branch ?
+          '[' + $env.branch + ']('+ $env.repository + '/tree/' + $env.branch + ')' :
+          '[master]('+ $env.repository + '/tree/master)'
+toolchain:
+  name: 'whitewater-ref-toolchain-{{timestamp}}'
+  # template:
+  #   getting_started: "**Your toolchain is ready!**\n**Quick start:** Commit a change to the Git repo to trigger a new build and deployment."
+services:
+  sample-repo:
+    service_id: github_integrated
+    parameters:
+      repo_name: some-fake-non-existent-repo
+      repo_url: https://github.ibm.com/otc-compliance/some-fake-non-existent-repo.git
+      type: link
+      # has_issues: true
+      # enable_traceability: true
