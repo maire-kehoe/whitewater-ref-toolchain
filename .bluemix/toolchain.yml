@@ -1,6 +1,6 @@
 version: '2'
-messages:
-  $i18n: locales.yml
+# messages:
+  # $i18n: locales.yml
 template:
   name: "Whitewater ref toolchain"
   description: "Used to show the Whitewater GitHub oauth Authorize button. References the existent Whitewater server, but a non-existent repo on that server."
