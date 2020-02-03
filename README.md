@@ -4,7 +4,10 @@ Used to show the Whitewater GitHub oauth Authorize button. References the existe
 The Whitewater internal IBM server is at [https://github.ibm.com](https://github.ibm.com)
 
 
-[![Deploy To IBM Cloud](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https%3A//github.com/maire-kehoe/whitewater-ref-toolchain&env_id=ibm:yp:us-south)
+[![Deploy To IBM Cloud](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https%3A//github.com/maire-kehoe/whitewater-ref-toolchain&env_id=ibm:yp:us-south) production us-south
+
+[![Deploy To IBM Cloud](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://dev.console.test.cloud.ibm.com/devops/setup/deploy?repository=https%3A//github.com/maire-kehoe/whitewater-ref-toolchain&env_id=ibm:yp:us-south) dev
+
 
 Note, the Whitewater tool integration is only available in accounts associated with IBM users.  
 Non-IBM users who open the click the above button will see an error dialog like:
