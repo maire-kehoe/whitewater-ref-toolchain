@@ -27,3 +27,19 @@ and because the repository reference doesn't exist, will see the following expec
 
 Note, the above button is for us-south / Dallas.  
 If you wish to authorize for a different region, change the value in the Region dropdown and wait for the page to refresh.
+
+
+### Note on the page of authorizations for git servers
+
+To see the list of existing authorizations in a region open a URL like this url for us-south / Dallas.
+- https://cloud.ibm.com/devops/git?env_id=ibm:yp:us-south
+
+for an IBMer user it will show if the user is Authorized for the Whitewater server,
+e.g. for me (mkehoe) it shows:
+
+**Git Servers**
+| Title                         | Type        | URL                    | Date Created  | Username | Status     |
+| ----------------------------- |-------------| -----------------------| --------------| ---------| -----------|
+| Whitewater GitHub Enterprise  | GitHub      | https://github.ibm.com | 28/10/2020    | MKEHOE   | Authorized |
+
+if the status for you is not "Authorized" then you may need to follow the above steps to see the Authorize button.
