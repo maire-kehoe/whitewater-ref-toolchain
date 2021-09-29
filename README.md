@@ -8,7 +8,8 @@ The Whitewater internal IBM server is at [https://github.ibm.com](https://github
 
 [![Deploy To IBM Cloud](https://cloud.ibm.com/devops/graphics/create_toolchain_button.png)](https://dev.console.test.cloud.ibm.com/devops/setup/deploy?repository=https%3A//github.com/maire-kehoe/whitewater-ref-toolchain&env_id=ibm:yp:us-south) dev
 
-Instructions 
+Instructions
+
 These steps can be used to prevent authorization errors when using tool-chain links that assume authorization has already been given. 
 Clicking on the buttons will kick off the creation of a (fake) tool chain. This is only used to get you to the step of authorizing access (of the Whitewater server) to your repository - which is needed to create your own tool chain later. After authorizing you will cancel this tool-chain creation and can continue with the creation of your own toolchain.
 1. Click on the button to use either the IBM production or the IBM test cloud (https://test.cloud.ibm.com) depending where you want to deploy to
